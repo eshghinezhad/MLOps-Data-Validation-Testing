@@ -1,0 +1,37 @@
+
+<html>
+<head><title>Data Quality Report - customer_data</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  h1 { color: #2c3e50; }
+  h2 { color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+  th { background-color: #3498db; color: white; padding: 10px; text-align: left; }
+  td { border: 1px solid #ddd; padding: 8px; }
+  tr:nth-child(even) { background-color: #f2f2f2; }
+  .pass { color: green; font-weight: bold; }
+  .fail { color: red; font-weight: bold; }
+  .summary-box { background: #ecf0f1; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+<h1>📊 Data Quality Report — customer_data.csv</h1>
+<div class="summary-box">
+  <strong>Overall Result:</strong> ❌ FAILED<br>
+  <strong>Total Expectations:</strong> 8<br>
+  <strong>Passed:</strong> 0<br>
+  <strong>Failed:</strong> 8<br>
+  <strong>Success Rate:</strong> 0.0%
+</div>
+<h2>Expectation Results</h2>
+<table>
+  <tr><th>Column</th><th>Expectation</th><th>Result</th><th>Failing Count</th></tr>
+  <tr><td>customer_id</td><td>expect_column_values_to_not_be_null</td><td><span class="fail">❌ FAIL</span></td><td>150</td></tr>
+  <tr><td>customer_id</td><td>expect_column_values_to_be_unique</td><td><span class="fail">❌ FAIL</span></td><td>568</td></tr>
+  <tr><td>age</td><td>expect_column_values_to_be_between</td><td><span class="fail">❌ FAIL</span></td><td>384</td></tr>
+  <tr><td>email</td><td>expect_column_values_to_match_regex</td><td><span class="fail">❌ FAIL</span></td><td>346</td></tr>
+  <tr><td>salary</td><td>expect_column_values_to_not_be_null</td><td><span class="fail">❌ FAIL</span></td><td>425</td></tr>
+  <tr><td>country</td><td>expect_column_values_to_be_in_set</td><td><span class="fail">❌ FAIL</span></td><td>301</td></tr>
+  <tr><td>signup_date</td><td>expect_column_values_to_match_strftime_format</td><td><span class="fail">❌ FAIL</span></td><td>242</td></tr>
+  <tr><td>TABLE</td><td>expect_table_row_count_to_be_between</td><td><span class="fail">❌ FAIL</span></td><td>N/A</td></tr>
+</table></body></html>
