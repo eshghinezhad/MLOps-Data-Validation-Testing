@@ -25,7 +25,7 @@ After running the validation, there was following issues in the dataset:
 -------------------------------------------------------------------------------------------------------------
 **4. Reflection Which Data Quality Issue Would Most Impact ML Model Performance?**
 
-In my opponion missing data (null/NaN values) is the data quality issue with the most impact on ML model performance, becuase:
+In my opponion **missing data** (null/NaN values) is the data quality issue with the most impact on ML model performance, becuase:
 
 Most ML algorithms cannot handle NaN values at all and the functionality of the system will be broke.
 When we fill missing values with mean, median, mode, or even imputation, we are making assumptions about the data which leading to biased predictions.
